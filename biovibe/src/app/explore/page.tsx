@@ -6,6 +6,8 @@ import { supabase } from "@/lib/supabase";
 import Link from "next/link";
 import Footer from "@/components/Footer";
 
+export const dynamic = 'force-dynamic';
+
 interface SavedBio {
   id: string;
   role: string;

@@ -5,6 +5,8 @@ import Link from "next/link";
 import { CategoryGridItem } from "@/components/CategoryComponents";
 import Footer from "@/components/Footer";
 
+export const dynamic = 'force-dynamic';
+
 interface SavedBio {
   id: string;
   role: string;
