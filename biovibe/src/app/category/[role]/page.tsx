@@ -29,6 +29,9 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   return {
     title: `50+ Best Instagram Bios & TikTok Captions for ${capitalizedRole} | BioVibes`,
     description: `Discover the best AI-generated social media bios and captions for ${decodedRole}. Perfect for Instagram, TikTok, and more!`,
+    alternates: {
+      canonical: `/category/${resolvedParams.role}`,
+    },
   };
 }
 

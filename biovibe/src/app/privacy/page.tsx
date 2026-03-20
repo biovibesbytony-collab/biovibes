@@ -6,6 +6,9 @@ import Footer from "@/components/Footer";
 export const metadata: Metadata = {
   title: "Privacy Policy | BioVibes.net",
   description: "Learn how we handle your data and privacy at BioVibes. We value your information and security.",
+  alternates: {
+    canonical: '/privacy',
+  },
 };
 
 export default function PrivacyPage() {
@@ -34,7 +37,7 @@ export default function PrivacyPage() {
               <Globe className="w-5 h-5 text-neon-purple" /> 1. Overview
             </h3>
             <p>
-              At BioVibes.net, we take your privacy seriously. This document outlines how we collect, use, and store information when you use our AI-powered bio generator.
+              BioVibes respects your privacy. We use industry-standard cookies to improve user experience. Note: We use third-party vendors, including Google, which use cookies to serve ads based on a user's prior visits to your website or other websites.
             </p>
           </section>
 

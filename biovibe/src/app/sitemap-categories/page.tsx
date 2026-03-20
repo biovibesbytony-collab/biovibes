@@ -8,6 +8,9 @@ export const dynamic = 'force-dynamic';
 export const metadata: Metadata = {
   title: "Browse All Bio Categories | BioVibes Sitemap",
   description: "Find the perfect bio for any role. Browse our complete list of AI-generated social media categories.",
+  alternates: {
+    canonical: '/sitemap-categories',
+  },
 };
 
 export default async function SitemapPage() {

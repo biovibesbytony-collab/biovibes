@@ -101,7 +101,27 @@ export default function Home() {
   };
 
   return (
-    <div className="min-h-screen bg-background text-foreground flex flex-col font-sans selection:bg-neon-purple/30">
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "SoftwareApplication",
+            "name": "BioVibes AI",
+            "operatingSystem": "Web",
+            "applicationCategory": "BusinessApplication",
+            "url": "https://www.biovibes.net/",
+            "description": "Advanced AI-powered bio and caption generator for social media creators.",
+            "offers": {
+              "@type": "Offer",
+              "price": "0",
+              "priceCurrency": "USD"
+            }
+          }),
+        }}
+      />
+      <div className="min-h-screen bg-background text-foreground flex flex-col font-sans selection:bg-neon-purple/30">
       {/* Header */}
       <header className="w-full flex justify-between items-center py-6 px-6 md:px-12 border-b border-panel-border bg-background/80 backdrop-blur-md sticky top-0 z-50">
         <h1 className="text-2xl md:text-3xl font-extrabold tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-neon-purple to-neon-blue drop-shadow-[0_0_8px_rgba(168,85,247,0.5)] cursor-pointer">
@@ -250,6 +270,7 @@ export default function Home() {
 
       <Footer />
     </div>
+    </>
   );
 }
 

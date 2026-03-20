@@ -13,9 +13,38 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "BioVibes - AI-Powered Bio Generator",
+  metadataBase: new URL('https://www.biovibes.net'),
+  title: "BioVibes: The #1 AI Bio Generator",
   description: "Create modern, clean Instagram bios and TikTok captions with BioVibes AI.",
-
+  alternates: {
+    canonical: '/',
+  },
+  openGraph: {
+    title: "BioVibes: The #1 AI Bio Generator",
+    description: "Create modern, clean Instagram bios and TikTok captions with BioVibes AI. Elevate your social presence with our professional, funny, and hype vibes.",
+    url: 'https://www.biovibes.net',
+    siteName: 'BioVibes',
+    images: [
+      {
+        url: '/og-image.png',
+        width: 1200,
+        height: 630,
+        alt: 'BioVibes - AI-Powered Bio Generator',
+      },
+    ],
+    locale: 'en_US',
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: "BioVibes: The #1 AI Bio Generator",
+    description: "Create modern, clean Instagram bios and TikTok captions with BioVibes AI. Elevate your social presence with our professional, funny, and hype vibes.",
+    images: ['/og-image.png'],
+  },
+  icons: {
+    icon: '/favicon.png',
+    apple: '/favicon.png',
+  },
 };
 
 export default function RootLayout({

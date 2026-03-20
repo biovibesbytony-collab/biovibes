@@ -6,6 +6,9 @@ import Footer from "@/components/Footer";
 export const metadata: Metadata = {
   title: "Contact Us | BioVibes Support",
   description: "Get in touch with the team behind BioVibes. We're here to help you find your social media vibe.",
+  alternates: {
+    canonical: '/contact',
+  },
 };
 
 export default function ContactPage() {

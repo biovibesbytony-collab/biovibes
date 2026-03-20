@@ -6,6 +6,9 @@ import Footer from "@/components/Footer";
 export const metadata: Metadata = {
   title: "About Us | BioVibes - The AI Identity Platform",
   description: "Learn about the mission behind BioVibes and how we're using AI to help creators build their personal brands.",
+  alternates: {
+    canonical: '/about',
+  },
 };
 
 export default function AboutPage() {
@@ -28,7 +31,7 @@ export default function AboutPage() {
             Helping creators find their <span className="text-neon-purple">Vibe</span>.
           </h2>
           <p className="text-xl text-foreground/60 max-w-2xl mx-auto leading-relaxed">
-            BioVibes was born out of a simple problem: the first impression is everything, but writing a bio is hard. We used advanced AI to build the tool we always wanted.
+            BioVibes.net is a premium AI-driven platform designed for the modern digital era. Founded in 2026, our mission is to empower creators, DJs, and professionals to express their unique vibe through high-converting, AI-optimized social media bios and captions.
           </p>
         </section>
 

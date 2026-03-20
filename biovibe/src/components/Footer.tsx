@@ -21,10 +21,25 @@ export default function Footer() {
           <Link href="/about" className="text-foreground/60 hover:text-white transition-colors">About Us</Link>
           <Link href="/contact" className="text-foreground/60 hover:text-white transition-colors">Contact</Link>
           <Link href="/privacy" className="text-foreground/60 hover:text-white transition-colors">Privacy</Link>
+          <Link href="/terms" className="text-foreground/60 hover:text-white transition-colors">Terms</Link>
         </div>
 
         <div className="text-foreground/20 text-[10px] font-mono">
           &copy; {new Date().getFullYear()} BioVibes.net - All Rights Reserved
+        </div>
+      </div>
+
+      <div className="max-w-7xl mx-auto pt-8 border-t border-panel-border/20 flex flex-col gap-4">
+        <h3 className="text-xs uppercase font-bold text-foreground/40 tracking-widest text-center mt-2">Popular Bio Categories</h3>
+        <div className="flex flex-wrap justify-center gap-4 text-xs">
+          <Link href="/category/dj" className="text-foreground/30 hover:text-neon-purple transition-colors">DJ Bios</Link>
+          <Link href="/category/nurse" className="text-foreground/30 hover:text-neon-purple transition-colors">Nurse Bios</Link>
+          <Link href="/category/gamer" className="text-foreground/30 hover:text-neon-purple transition-colors">Gamer Bios</Link>
+          <Link href="/category/entrepreneur" className="text-foreground/30 hover:text-neon-purple transition-colors">Entrepreneur Bios</Link>
+          <Link href="/category/fitness" className="text-foreground/30 hover:text-neon-purple transition-colors">Fitness Bios</Link>
+          <Link href="/category/chef" className="text-foreground/30 hover:text-neon-purple transition-colors">Chef Bios</Link>
+          <Link href="/category/travel" className="text-foreground/30 hover:text-neon-purple transition-colors">Travel Bios</Link>
+          <Link href="/category/model" className="text-foreground/30 hover:text-neon-purple transition-colors">Model Bios</Link>
         </div>
       </div>
     </footer>
