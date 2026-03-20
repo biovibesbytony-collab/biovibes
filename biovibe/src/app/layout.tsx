@@ -15,6 +15,7 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "BioVibes - AI-Powered Bio Generator",
   description: "Create modern, clean Instagram bios and TikTok captions with BioVibes AI.",
+
 };
 
 export default function RootLayout({
